@@ -39,7 +39,7 @@
         <script src="data/Sultra_Street_NetworkStreetNetwork_Sultra_4.js"></script>
         <script src="data/PusatPemerintahan_5.js"></script>
         <script src="data/Bandara_6.js"></script>
-        <script src="data/IndustriPengolahanNikel_7.js"></script>
+        <script src="data/IndustriPengolahanPertambangan_7.js"></script>
         <script src="data/Terminal_8.js"></script>
         <script src="data/Pelabuhan_9.js"></script>
         <script>
@@ -662,7 +662,7 @@
         });
         bounds_group.addLayer(layer_Bandara_6);
         map.addLayer(layer_Bandara_6);
-        function pop_IndustriPengolahanNikel_7(feature, layer) {
+        function pop_IndustriPengolahanPertambangan_7(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">fid</th>\
@@ -728,9 +728,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_IndustriPengolahanNikel_7_0() {
+        function style_IndustriPengolahanPertambangan_7_0() {
             return {
-                pane: 'pane_IndustriPengolahanNikel_7',
+                pane: 'pane_IndustriPengolahanPertambangan_7',
                 radius: 6.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -744,26 +744,26 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_IndustriPengolahanNikel_7');
-        map.getPane('pane_IndustriPengolahanNikel_7').style.zIndex = 407;
-        map.getPane('pane_IndustriPengolahanNikel_7').style['mix-blend-mode'] = 'normal';
-        var layer_IndustriPengolahanNikel_7 = new L.geoJson(json_IndustriPengolahanNikel_7, {
+        map.createPane('pane_IndustriPengolahanPertambangan_7');
+        map.getPane('pane_IndustriPengolahanPertambangan_7').style.zIndex = 407;
+        map.getPane('pane_IndustriPengolahanPertambangan_7').style['mix-blend-mode'] = 'normal';
+        var layer_IndustriPengolahanPertambangan_7 = new L.geoJson(json_IndustriPengolahanPertambangan_7, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_IndustriPengolahanNikel_7',
-            layerName: 'layer_IndustriPengolahanNikel_7',
-            pane: 'pane_IndustriPengolahanNikel_7',
-            onEachFeature: pop_IndustriPengolahanNikel_7,
+            dataVar: 'json_IndustriPengolahanPertambangan_7',
+            layerName: 'layer_IndustriPengolahanPertambangan_7',
+            pane: 'pane_IndustriPengolahanPertambangan_7',
+            onEachFeature: pop_IndustriPengolahanPertambangan_7,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_IndustriPengolahanNikel_7_0(feature));
+                return L.circleMarker(latlng, style_IndustriPengolahanPertambangan_7_0(feature));
             },
         });
-        bounds_group.addLayer(layer_IndustriPengolahanNikel_7);
-        map.addLayer(layer_IndustriPengolahanNikel_7);
+        bounds_group.addLayer(layer_IndustriPengolahanPertambangan_7);
+        map.addLayer(layer_IndustriPengolahanPertambangan_7);
         function pop_Terminal_8(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -973,7 +973,7 @@
         {label: '<b>Infrastructure</b>', selectAllCheckbox: true, children: [
             {label: '<img src="legend/Pelabuhan_9.png" /> Pelabuhan', layer: layer_Pelabuhan_9},
             {label: '<img src="legend/Terminal_8.png" /> Terminal', layer: layer_Terminal_8},
-            {label: '<img src="legend/IndustriPengolahanNikel_7.png" /> Industri Pengolahan Nikel', layer: layer_IndustriPengolahanNikel_7},
+            {label: '<img src="legend/IndustriPengolahanPertambangan_7.png" /> Industri Pengolahan Pertambangan', layer: layer_IndustriPengolahanPertambangan_7},
             {label: '<img src="legend/Bandara_6.png" /> Bandara', layer: layer_Bandara_6},
             {label: '<img src="legend/PusatPemerintahan_5.png" /> Pusat Pemerintahan', layer: layer_PusatPemerintahan_5},]},
         {label: '<b>Edges Street Netwrok Kab Kot</b>', selectAllCheckbox: true, children: [
@@ -1044,15 +1044,15 @@
             }  
         });       
         setBounds();
-        resetLabels([layer_PusatPemerintahan_5,layer_Bandara_6,layer_IndustriPengolahanNikel_7,layer_Terminal_8]);
+        resetLabels([layer_PusatPemerintahan_5,layer_Bandara_6,layer_IndustriPengolahanPertambangan_7,layer_Terminal_8]);
         map.on("zoomend", function(){
-            resetLabels([layer_PusatPemerintahan_5,layer_Bandara_6,layer_IndustriPengolahanNikel_7,layer_Terminal_8]);
+            resetLabels([layer_PusatPemerintahan_5,layer_Bandara_6,layer_IndustriPengolahanPertambangan_7,layer_Terminal_8]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_PusatPemerintahan_5,layer_Bandara_6,layer_IndustriPengolahanNikel_7,layer_Terminal_8]);
+            resetLabels([layer_PusatPemerintahan_5,layer_Bandara_6,layer_IndustriPengolahanPertambangan_7,layer_Terminal_8]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_PusatPemerintahan_5,layer_Bandara_6,layer_IndustriPengolahanNikel_7,layer_Terminal_8]);
+            resetLabels([layer_PusatPemerintahan_5,layer_Bandara_6,layer_IndustriPengolahanPertambangan_7,layer_Terminal_8]);
         });
         </script>
     </body>
