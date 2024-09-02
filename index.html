@@ -979,18 +979,18 @@
         map.addLayer(layer_Pelabuhan_10);
         var baseMaps = {};
         var overlaysTree = [
-        {label: '<b>Infrastructure</b>', selectAllCheckbox: true, children: [
+        {label: '<b>Infrastruktur</b>', selectAllCheckbox: true, children: [
             {label: '<img src="legend/Pelabuhan_10.png" /> Pelabuhan', layer: layer_Pelabuhan_10},
             {label: '<img src="legend/Terminal_9.png" /> Terminal', layer: layer_Terminal_9},
             {label: '<img src="legend/IndustriPengolahanPertambangan_8.png" /> Industri Pengolahan Pertambangan', layer: layer_IndustriPengolahanPertambangan_8},
             {label: '<img src="legend/Bandara_7.png" /> Bandara', layer: layer_Bandara_7},
             {label: '<img src="legend/PusatPemerintahan_6.png" /> Pusat Pemerintahan', layer: layer_PusatPemerintahan_6},]},
         {label: '<b>Edges Street Netwrok Kab Kot</b>', selectAllCheckbox: true, children: [
-            {label: '<img src="legend/Sultra_Street_NetworkStreetNetwork_Sultra_5.png" /> Sultra_Street_Network — Street Network_Sultra', layer: layer_Sultra_Street_NetworkStreetNetwork_Sultra_5},]},
+            {label: '<img src="legend/Sultra_Street_NetworkStreetNetwork_Sultra_5.png" /> Jaringan Jalan', layer: layer_Sultra_Street_NetworkStreetNetwork_Sultra_5},]},
         {label: '<b>Area Sultra</b>', selectAllCheckbox: true, children: [
-            {label: '<img src="legend/KabKot_SulawesiTenggara_4.png" /> KabKot_Sulawesi Tenggara', layer: layer_KabKot_SulawesiTenggara_4},
-            {label: '<img src="legend/Kec_Sultra_3.png" /> Kec_Sultra', layer: layer_Kec_Sultra_3},
-            {label: '<img src="legend/Desa_Sultra_2.png" /> Desa_Sultra', layer: layer_Desa_Sultra_2},]},
+            {label: '<img src="legend/KabKot_SulawesiTenggara_4.png" /> Kabupaten/Kota', layer: layer_KabKot_SulawesiTenggara_4},
+            {label: '<img src="legend/Kec_Sultra_3.png" /> Kecamatan', layer: layer_Kec_Sultra_3},
+            {label: '<img src="legend/Desa_Sultra_2.png" /> Desa', layer: layer_Desa_Sultra_2},]},
             {label: "Nighttime Lights", layer: layer_NighttimeLights_1},
             {label: "Google Hybrid", layer: layer_GoogleHybrid_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
@@ -1000,7 +1000,7 @@
             //openedSymbol: '&#8863; &#x1f5c1;',
             //collapseAll: 'Collapse all',
             //expandAll: 'Expand all',
-            collapsed: false, 
+            collapsed: true, 
         });
         lay.addTo(map);
 		document.addEventListener("DOMContentLoaded", function() {
